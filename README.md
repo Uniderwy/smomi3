@@ -24,8 +24,8 @@ def augment(image,label):
 ```
 def augment(image,label):
     with tf.name_scope('Add_gaussian_noise'):
-        noise_img = image + tf.random.normal(shape=tf.shape(image), mean=0.0, stddev=(50)/(255), dtype=tf.float32)
-        noise_img = tf.clip_by_value(noise_img, 0.0, 1.0)
+        noise_img = image + tf.random.normal(shape=tf.shape(image), mean=0.0, stddev=1.0, dtype=tf.float32)
+        noise_img = tf.clip_by_value(noise_img, -1.0, 1.0)
     return noise_img,label
 ```
    
