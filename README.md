@@ -40,7 +40,10 @@ def augment(image,label):
 ```
 
 ```   
-   
+  
+![alt text](https://github.com/Uniderwy/smomi3/blob/main/rotate60.jpg)  
+  
+  
     
     
     
