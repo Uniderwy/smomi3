@@ -8,8 +8,8 @@ def augment(image,label):
     image = tf.image.random_flip_left_right(image)
     return image,label
  ``` 
-train - 
-val - 
+train - оранжевый
+val - синий
 
 ![alt text](https://github.com/Uniderwy/smomi3/blob/main/new_flip.jpg) 
     
@@ -29,14 +29,14 @@ val - серый
 ![alt text](https://github.com/Uniderwy/smomi3/blob/main/new_bright4.jpg) 
 
 ### Brightness 0.1, Contract 0.2, 1.5
-train - 
-val - 
+train - красный 
+val - голубой
 
 ![alt text](https://github.com/Uniderwy/smomi3/blob/main/new_bright2.jpg) 
 
 ### Brightness 0.7, Contract 0.3, 1.3
-train - 
-val - 
+train - оранжевый
+val - синий
 
 ![alt text](https://github.com/Uniderwy/smomi3/blob/main/new_bright3.jpg) 
     
@@ -93,8 +93,8 @@ def augment(image,label):
     image = tfa.image.rotate(image, 30)
     return image,label
 ```   
-train - 
-val - 
+train - красный
+val - голубой
 
 ![alt text](https://github.com/Uniderwy/smomi3/blob/main/opt.jpg) 
   
