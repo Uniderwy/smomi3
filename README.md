@@ -22,7 +22,7 @@ def augment(image,label):
     image = tf.image.random_contrast(image, 0.3, 1.3, seed=None)
     return image,label
  ```
-### Brightness 0.2, Contract 0.8, 1.4
+### Brightness 0.1, Contract 0.7, 1.4
 train - зеленый
 val - серый
 
@@ -101,15 +101,15 @@ def augment(image,label):
         image = tf.clip_by_value(image, -1.0, 1.0)
     image = tf.image.convert_image_dtype(image, tf.float32)
     image = tf.image.random_flip_left_right(image)
-    image = tf.image.random_brightness(image, 0.2, seed=None)
-    image = tf.image.random_contrast(image, 0.8, 1.4, seed=None)
+    image = tf.image.random_brightness(image, 0.1, seed=None)
+    image = tf.image.random_contrast(image, 0.7, 1.4, seed=None)
     image = tfa.image.rotate(image, 30)
     return image,label
 ```   
-train - розовый
-val - зеленый
+train - синий
+val - красный
 
-![alt text](https://github.com/Uniderwy/smomi3/blob/main/opt1.jpg) 
+![alt text](https://github.com/Uniderwy/smomi3/blob/main/optimal1.jpg) 
   
 
   
